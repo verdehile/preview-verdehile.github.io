@@ -39,7 +39,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:pt-20 md:pt-16 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Subtle top gradient glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-linear-to-b from-primary/20 to-transparent rounded-full blur-3xl opacity-40"></div>
@@ -83,7 +83,7 @@ export default function Hero() {
             animationDelay: "0.3s",
           }}
         >
-          <p className="text-2xl sm:text-3xl font-heading font-600 text-primary">
+          <p className="text-2xl sm:text-2xl font-heading font-600 text-primary font-bold">
             Personalized Nutrition Delivery
           </p>
         </div>
