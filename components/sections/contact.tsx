@@ -1,29 +1,35 @@
-"use client"
+"use client";
 
-import { type FormEvent, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { type FormEvent, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
-  }
+    e.preventDefault();
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 3000);
+  };
 
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Get in Touch</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+          Get in Touch
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-2">
-              <h3 className="text-xl font-bold text-foreground">Contact Information</h3>
-              <p className="text-foreground/70">Have questions? We'd love to hear from you.</p>
+              <h3 className="text-xl font-bold text-foreground">
+                Contact Information
+              </h3>
+              <p className="text-foreground/70">
+                Have questions? We'd love to hear from you.
+              </p>
             </div>
 
             <div className="space-y-6">
@@ -31,8 +37,11 @@ export default function ContactSection() {
                 <Mail className="text-primary mt-1" size={24} />
                 <div>
                   <p className="font-semibold text-foreground">Email</p>
-                  <a href="mailto:hello@healthyfood.com" className="text-primary hover:underline">
-                    hello@healthyfood.com
+                  <a
+                    href="mailto:hello@brandname.com"
+                    className="text-primary hover:underline"
+                  >
+                    hello@brandname.com
                   </a>
                 </div>
               </div>
@@ -41,7 +50,10 @@ export default function ContactSection() {
                 <Phone className="text-primary mt-1" size={24} />
                 <div>
                   <p className="font-semibold text-foreground">Phone</p>
-                  <a href="tel:+1234567890" className="text-primary hover:underline">
+                  <a
+                    href="tel:+1234567890"
+                    className="text-primary hover:underline"
+                  >
                     +1 (234) 567-890
                   </a>
                 </div>
@@ -64,7 +76,9 @@ export default function ContactSection() {
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Name</label>
+              <label className="block text-sm font-medium text-foreground mb-2">
+                Name
+              </label>
               <input
                 type="text"
                 placeholder="Your name"
@@ -74,7 +88,9 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+              <label className="block text-sm font-medium text-foreground mb-2">
+                Email
+              </label>
               <input
                 type="email"
                 placeholder="your@email.com"
@@ -84,7 +100,9 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+              <label className="block text-sm font-medium text-foreground mb-2">
+                Message
+              </label>
               <textarea
                 placeholder="Tell us what you think..."
                 rows={5}
@@ -93,7 +111,10 @@ export default function ContactSection() {
               ></textarea>
             </div>
 
-            <Button type="submit" className="w-full bg-primary hover:bg-accent text-primary-foreground py-3 text-base">
+            <Button
+              type="submit"
+              className="w-full bg-primary hover:bg-accent text-primary-foreground py-3 text-base"
+            >
               {isSubmitted ? "Message Sent!" : "Send Message"}
             </Button>
           </form>
@@ -105,5 +126,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

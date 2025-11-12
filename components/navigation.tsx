@@ -1,10 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(
+      0,
+      0
+    ); /** @bug mobile view scrolls to chart section onload **/
+  }, []);
 
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
