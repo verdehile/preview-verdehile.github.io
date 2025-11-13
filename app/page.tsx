@@ -5,6 +5,7 @@ import SubscriptionModel from "@/components/sections/subscription-model";
 import FitnessAssessment from "@/components/sections/fitness-assessment";
 import ContactSection from "@/components/sections/contact";
 import Navigation from "@/components/navigation";
+import Menus from "@/components/sections/menus";
 
 export default function Home() {
   return (

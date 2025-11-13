@@ -19,7 +19,6 @@ export default function ContactSection() {
         <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
           Get in Touch
         </h2>
-
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
@@ -31,7 +30,6 @@ export default function ContactSection() {
                 Have questions? We'd love to hear from you.
               </p>
             </div>
-
             <div className="space-y-6">
               <div className="flex gap-4 items-start">
                 <Mail className="text-primary mt-1" size={24} />
@@ -45,7 +43,6 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-
               <div className="flex gap-4 items-start">
                 <Phone className="text-primary mt-1" size={24} />
                 <div>
@@ -58,7 +55,6 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-
               <div className="flex gap-4 items-start">
                 <MapPin className="text-primary mt-1" size={24} />
                 <div>
@@ -72,7 +68,6 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -86,7 +81,6 @@ export default function ContactSection() {
                 className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
-
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
                 Email
@@ -98,7 +92,6 @@ export default function ContactSection() {
                 className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
-
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">
                 Message
@@ -110,7 +103,6 @@ export default function ContactSection() {
                 className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
               ></textarea>
             </div>
-
             <Button
               type="submit"
               className="w-full bg-primary hover:bg-accent text-primary-foreground py-3 text-base"
@@ -119,7 +111,6 @@ export default function ContactSection() {
             </Button>
           </form>
         </div>
-
         {/* Footer */}
         <div className="border-t border-border mt-12 pt-8 text-center text-foreground/60">
           <p>&copy; 2025 Healthy Food. All rights reserved.</p>
